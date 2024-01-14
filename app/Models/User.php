@@ -40,8 +40,19 @@ class User extends Authenticatable
      */
     protected $casts = [
         'email_verified_at' => 'datetime',
-        'password' => 'hashed',
+        // 'password' => 'hashed',
     ];
+
+
+    static public function getAdmin()
+    {
+         return self::select('users.*') 
+                        ->where('user_type','=',1)
+                        ->orderBy('id','desc')
+                        ->get();
+
+
+    }
     Static public function getEmailSingle($email){
 
         return User::where('email', '=',$email)->first();

@@ -32,15 +32,15 @@
                 <div class="card-body">
                 <div class="form-group">
                     <label >Name</label>
-                    <input type="Text" class="form-control" name="Name" Required placeholder="Name">
+                    <input type="Text" class="form-control" name="name" Required placeholder="Name">
                   </div>
                   <div class="form-group">
                     <label >Email</label>
-                    <input type="email" class="form-control" name="Email" Required placeholder="Enter email">
+                    <input type="email" class="form-control" name="email" Required placeholder="Enter email">
                   </div>
                   <div class="form-group">
                     <label >Password</label>
-                    <input type="password" class="form-control"  name="Password" Required placeholder="Password">
+                    <input type="password" class="form-control"  name="password" Required placeholder="Password">
                   </div>
                   
                 </div>
